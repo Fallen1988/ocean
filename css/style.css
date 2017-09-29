@@ -45,7 +45,8 @@
 
 body {
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  font-family: BentonSansCond-Book; }
 
 img {
   max-width: 100%;
@@ -114,6 +115,7 @@ img {
 .main-nav__item a {
   text-decoration: none;
   color: #283b4d;
+  font-family: BentonSansCond-Bold;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700; }
@@ -152,6 +154,7 @@ img {
   margin-bottom: 40px; }
 
 .main-left h2 {
+  font-family: BentonSansCond-Bold;
   font-size: 25px;
   font-weight: 700;
   padding-left: 18px;
@@ -172,6 +175,7 @@ img {
     padding-left: 18px; }
 
 .main-left-down__img p {
+  font-family: BentonSansCond-Book;
   font-size: 18px;
   font-weight: 300;
   margin-top: 15px;
@@ -186,8 +190,12 @@ img {
   padding-right: 25px; }
 
 .main-center__header, .main-center__footer {
-  padding-left: 30px;
+  padding-left: 55px;
   margin-bottom: 25px; }
+
+.main-center__wrapper {
+  border: 1px solid #dddfe1;
+  background-color: #f8f6f5; }
 
 .main-center__header p, .main-center__footer p {
   position: relative;
@@ -200,7 +208,7 @@ img {
     width: 28px;
     height: 31px;
     left: -43px;
-    background-image: url("../img/shape.png");
+    background-image: url("../../img/shape.png");
     background-repeat: no-repeat; }
 
 .main-center__header time, .main-center__footer time {
@@ -212,7 +220,9 @@ img {
 
 .main-center__table {
   border-collapse: collapse;
-  margin-bottom: 42px; }
+  margin-bottom: 42px;
+  margin-right: 25px;
+  margin-left: 25px; }
 
 .main-center__table tr:nth-child(2n-1) {
   background-color: #f3f1ee; }
@@ -224,6 +234,7 @@ img {
   padding-bottom: 6px; }
 
 td.table-head {
+  font-family: BentonSansCond-Bold;
   font-weight: 700; }
 
 .main-center__item {
@@ -246,7 +257,13 @@ td.table-head {
 .main-center__btn {
   display: flex;
   margin-left: auto;
-  margin-bottom: 57px; }
+  margin-bottom: 57px;
+  margin-right: 25px; }
+
+.main-center__footer {
+  margin-top: 22px;
+  border: 1px solid #dddfe1;
+  background-color: #f8f6f5; }
 
 .main-right {
   margin-right: 28px; }
@@ -258,6 +275,7 @@ td.table-head {
   background-color: #f7f6f4; }
 
 .main-right__wrapper h2 {
+  font-family: BentonSansCond-Bold;
   font-size: 25px;
   font-weight: 700;
   margin: 0;
@@ -349,6 +367,7 @@ td.table-head {
   width: 213px;
   height: 16px;
   padding: 15px 0;
+  font-family: BentonSansCond-Bold;
   text-align: center;
   text-decoration: none;
   font-size: 16px;

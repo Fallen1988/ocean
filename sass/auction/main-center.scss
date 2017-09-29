@@ -5,8 +5,13 @@
 }
 
 .main-center__header {
-  padding-left: 30px;
+  padding-left: 55px;
   margin-bottom: 25px;
+}
+
+.main-center__wrapper {
+  border: 1px solid #dddfe1;
+  background-color: #f8f6f5;
 }
 
 .main-center__header p {
@@ -21,7 +26,7 @@
     width: 28px;
     height: 31px;
     left: -43px;
-    background-image: url("../img/shape.png");
+    background-image: url("../../img/shape.png");
     background-repeat: no-repeat;
   }
 }
@@ -37,6 +42,8 @@
 .main-center__table {
   border-collapse: collapse;
   margin-bottom: 42px;
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .main-center__table tr {
@@ -55,6 +62,7 @@
 }
 
 td.table-head {
+  font-family: BentonSansCond-Bold;
   font-weight: 700;
 }
 
@@ -83,8 +91,12 @@ td.table-head {
   display: flex;
   margin-left: auto;
   margin-bottom: 57px;
+  margin-right: 25px;
 }
 
 .main-center__footer {
-  @extend .main-center__header
+  @extend .main-center__header;
+  margin-top: 22px;
+  border: 1px solid #dddfe1;
+  background-color: #f8f6f5;
 }
