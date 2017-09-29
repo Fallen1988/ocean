@@ -1,3 +1,48 @@
+@font-face {
+  font-family: 'BentonSansCond-Light';
+  src: url("../fonts/BentonSansCond/BentonSansCond-Light.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BentonSansCond-Book';
+  src: url("../fonts/BentonSansCond/BentonSansCond-Book.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BentonSansCond-Bold';
+  src: url("../fonts/BentonSansCond/BentonSansCond-Bold.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../fonts/Gotham/gotham-book.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_Oswald-Bold';
+  src: url("../fonts/oswald-bold/Oswald-Bold.eot");
+  src: url("../fonts/oswald-bold/Oswald-Bold.woff") format("woff"), url("../fonts/oswald-bold/Oswald-Bold.ttf") format("truetype"), url("../fonts/oswald-bold/Oswald-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_Oswald-ExtraLight';
+  src: url("../fonts/oswald-extra-light/Oswald-ExtraLight.eot");
+  src: url("../fonts/oswald-extra-light/Oswald-ExtraLight.woff") format("woff"), url("../fonts/oswald-extra-light/Oswald-ExtraLight.ttf") format("truetype"), url("../fonts/oswald-extra-light/Oswald-ExtraLight.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_Oswald-Medium';
+  src: url("../fonts/oswald-medium/Oswald-Medium.eot");
+  src: url("../fonts/oswald-medium/Oswald-Medium.woff") format("woff"), url("../fonts/oswald-medium/Oswald-Medium.ttf") format("truetype"), url("../fonts/oswald-medium/Oswald-Medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   width: 100%;
   margin: 0; }
