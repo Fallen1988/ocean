@@ -1,0 +1,90 @@
+.main-center {
+  width: 823px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main-center__header {
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+.main-center__header p {
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 8px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 31px;
+    left: -43px;
+    background-image: url("../img/shape.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.main-center__header time {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #5f5e5f;
+  margin-top: -5px;
+}
+
+.main-center__table {
+  border-collapse: collapse;
+  margin-bottom: 42px;
+}
+
+.main-center__table tr {
+
+  &:nth-child(2n-1) {
+    background-color: #f3f1ee;
+  }
+}
+
+.main-center__table td {
+  font-size: 14px;
+  font-weight: 300;
+
+  padding-top: 19px;
+  padding-bottom: 6px;
+}
+
+td.table-head {
+  font-weight: 700;
+}
+
+.main-center__item {
+  width: 60px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.main-center__descr {
+  width: 713px;
+  padding-left: 20px;
+}
+
+.main-center__descr .read-note {
+  font-size: 10px;
+  color: #f6bc88;
+}
+
+.main-center__descr p {
+  background: none;
+  margin: 10px 0;
+}
+
+.main-center__btn {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 57px;
+}
+
+.main-center__footer {
+  @extend .main-center__header
+}
