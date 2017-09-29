@@ -24,12 +24,12 @@ gulp.task("sass", function () {
   gulp.src("sass/style.scss")      //звідки ми все починаємо
     .pipe(sass())
     .pipe(gulp.dest("css"))     // в яку папку зберегти результат
-    .pipe(browserSync.reload({
-      stream: true
-    }))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 gulp.task('watch', ['browserSync'], function () {
