@@ -12,6 +12,9 @@
 .main-nav__item a {
   text-decoration: none;
   color: #283b4d;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 25px;
 
   font-family: BentonSansCond-Bold;
   font-size: 20px;
@@ -20,13 +23,13 @@
 }
 
 .main-nav__item-1 {
-  margin-right: 89px;
-}
-
-.main-nav__item-2 {
   margin-right: 67px;
 }
 
+.main-nav__item-2 {
+  margin-right: 45px;
+}
+
 .main-nav__item-3 {
-  margin-right: 71px;
+  margin-right: 49px;
 }
