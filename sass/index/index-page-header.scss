@@ -1,0 +1,35 @@
+.main-nav__item--position {
+  margin-right: 46px;
+}
+
+
+.main-nav__item--position:nth-child(3) {
+  margin-right: 61px;
+}
+
+a.main-nav--btn {
+  margin-right: 48px;
+  margin-top: 29px;
+  padding: 15px 0;
+
+  color: white;
+  text-transform: none;
+}
+
+.user-block--position {
+  margin-bottom: 0;
+}
+
+.user-block__user--position {
+  margin-right: 48px;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.page-header__logo--position {
+  margin-top: auto;
+}
+
+.main-nav__item--active {
+  border-bottom: 7px solid #283b4d;
+}

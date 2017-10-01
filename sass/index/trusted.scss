@@ -1,0 +1,56 @@
+.trusted {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  background-color: #f7f6f4;
+
+}
+
+.trusted__item {
+  display: inline-block;
+  margin: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 37px;
+  margin-top: 48px;
+
+  &--1 {
+    margin-right: 10px;
+  }
+
+  &--2 {
+    margin-right: 48px;
+    margin-left: 0;
+  }
+
+  &--3 {
+    margin-right: 57px;
+    margin-left: 0;
+  }
+
+  &--4 {
+    margin-right: 65px;
+    margin-left: 0;
+  }
+
+  &--5 {
+    margin-right: 57px;
+    margin-left: 0;
+  }
+
+  &--6 {
+
+    margin-left: 0;
+  }
+}
+
+.trusted__item p {
+  font-family: BentonSansCond-Bold;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 85px;
+
+  margin: 0;
+}

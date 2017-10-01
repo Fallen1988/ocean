@@ -1,0 +1,58 @@
+.sliderA {
+  width: 100%;
+  height: 862px;
+
+  position: relative;
+  text-align: center;
+}
+
+.sliderA > input {
+  display: none;
+}
+
+.sliderA > input + label {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 8px;
+  border: 2px solid white;
+
+  cursor: pointer;
+
+  z-index: 100;
+  position: relative;
+
+  margin-right: 14px;
+  top: 95%;
+
+  transition: background 0.8s ease-out 0s;
+}
+
+.sliderA > input + label:hover {
+  background: rgba(250, 250, 250, 0.8);
+}
+
+.sliderA > input:checked + label {
+  border: 4px solid #f79f51;
+}
+
+.sliderA > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+.sliderA > div {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.sliderA > input:checked + label + div {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}

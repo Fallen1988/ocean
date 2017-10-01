@@ -1,0 +1,203 @@
+.container--works {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.works {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 62px;
+
+  text-align: center;
+
+  background-color: #f7f6f4;
+}
+
+.main-h2 {
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-family: BentonSansCond-Bold;
+  font-size: 60px;
+  font-weight: 700;
+  color: #283b4d;
+}
+
+.works__up {
+  margin-bottom: 68px;
+}
+
+.works__up p{
+  display: inline-block;
+  margin: 0;
+}
+
+.works__up--p1 {
+  font-family: BentonSansCond-Book;
+  font-size: 25px;
+  font-weight: 300;
+  color: #485867;
+}
+
+.works__up--p2 {
+  position: relative;
+  padding: 15px 23px;
+  padding-right: 38px;
+  border: 1px solid #e0e0e5;
+  border-radius: 5px;
+
+  font-size: 14px;
+  font-family: Gotham-Book;
+  font-weight: 300;
+  color: #a0a3a9;
+
+  &:hover::after {
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    right: 12px;
+    top: 16px;
+
+    background: url("../../img/icons/arrow-down.png") no-repeat;
+  }
+}
+
+
+.works__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-bottom: 23px;
+
+  text-align: center;
+}
+
+.works__item {
+  //display: inline-block;
+  width: 290px;
+  margin-left: 8%;
+  margin-right: 5%;
+  margin-bottom: 132px;
+
+  padding-top: 150px;
+}
+
+.works__item--boat {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 114px;
+    height: 114px;
+
+    bottom: 88px;
+    left: 88px;
+
+    background: url("../../img/boat.png") no-repeat 0 0;
+  }
+}
+
+.works__item--account {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 122px;
+
+    bottom: 81px;
+    left: 88px;
+
+    background: url("../../img/account.png") no-repeat 0 0;
+  }
+}
+
+.works__item--start {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 137px;
+    height: 134px;
+
+    bottom: 81px;
+    left: 88px;
+
+    background: url("../../img/start.png") no-repeat 0 0;
+  }
+}
+
+.works__item--bids {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 116px;
+    height: 150px;
+
+    bottom: 151px;
+    left: 88px;
+
+    background: url("../../img/bids.png") no-repeat 0 0;
+  }
+}
+
+.works__item--offer {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 116px;
+    height: 116px;
+
+    bottom: 118px;
+    left: 88px;
+
+    background: url("../../img/offer.png") no-repeat 0 0;
+  }
+}
+
+.works__item--process {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 122px;
+    height: 122px;
+
+    bottom: 156px;
+    left: 88px;
+
+    background: url("../../img/process.png") no-repeat 0 0;
+  }
+}
+
+.works__item p {
+
+  font-size: 40px;
+  font-weight: 300;
+  color: #485867;
+  margin-bottom: 0;
+}
+
+.works__btn {
+  display: flex;
+  justify-content: center;
+
+  margin-top: -40px;
+  padding-bottom: 55px;
+}

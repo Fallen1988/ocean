@@ -1,0 +1,68 @@
+.people {
+  text-align: center;
+}
+
+.main-h2--people {
+  margin-top: 56px;
+  margin-bottom: 55px;
+}
+
+.people__saying {
+  display: flex;
+  justify-content: space-between;
+}
+
+.people__item {
+  width: 394px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &:first-child {
+    margin-right: 40px;
+  }
+
+  &:nth-child(2){
+    margin: 0;
+  }
+
+  &:last-child {
+    margin-left: 40px;
+  }
+}
+
+.people__item1{
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  font-family: BentonSansCond-Light;
+  font-size: 24px;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+.people__item2 {
+  margin: 0;
+
+  font-family: BentonSansCond-Light;
+  font-size: 18px;
+  font-weight: 300;
+  color: #283b4d;
+}
+
+.people__saying {
+  margin-bottom: 63px;
+}
+
+.people-btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 86px;
+}
+
+.btn--people {
+  background: none;
+  color: #283b4d;
+  border: 1px solid #5a8ea1;
+}

@@ -1,0 +1,38 @@
+.block-stats {
+  margin-top: 115px;
+  margin-bottom: 101px;
+  display: flex;
+  justify-content: center;
+}
+
+.block-stats__p {
+  display: inline-block;
+  text-align: center;
+  margin-left: 89px;
+  margin-right: 89px;
+}
+
+.block-stats__p--p1 {
+  font-family: BentonSansCond-Bold;
+  font-size: 125px;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+.block-stats__p--p2 {
+  font-family: BentonSansCond-Book;
+  font-size: 40px;
+  font-weight: 300;
+
+  margin: 0;
+  margin-top: -35px;
+}
+
+.block-stats__p {
+  color: #283b4d;
+}
+
+.block-stats__p--color {
+  color: #f79f51;
+}
