@@ -1,5 +1,8 @@
 @import "fonts";
 @import "scaffolding";
+@import "list";
+
+
 @import "auction/page-header";
 @import "auction/main-nav";
 @import "auction/main-header";
@@ -16,3 +19,6 @@
 @import "index/slider";
 @import "index/people";
 @import "index/trusted";
+@import "index/main-footer";
+
+@import "log_in_modal/modal";

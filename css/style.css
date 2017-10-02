@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'BentonSansCond-Light';
   src: url("../fonts/BentonSansCond/BentonSansCond-Light.otf");
@@ -50,6 +51,18 @@ body {
 
 img {
   max-width: 100%; }
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.list a {
+  font-family: BentonSansCond-Book;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: #ffffff; }
 
 .page-header {
   display: flex;
@@ -378,6 +391,9 @@ td.table-head {
   font-weight: 700;
   color: white;
   background-color: #f79f51; }
+
+.page-header {
+  z-index: 20; }
 
 .main-nav__item--position {
   margin-right: 46px; }
@@ -757,3 +773,204 @@ a.main-nav--btn {
   font-weight: 700;
   line-height: 85px;
   margin: 0; }
+
+.main-footer {
+  display: flex;
+  background-color: #283b4d; }
+
+.footer-nav__item {
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 50px; }
+  .footer-nav__item:first-child {
+    margin-left: 93px;
+    margin-right: 63px; }
+  .footer-nav__item:nth-child(2) {
+    margin-right: 57px; }
+  .footer-nav__item:nth-child(3) {
+    margin-right: 52px; }
+
+.main-footer--left {
+  margin-right: auto;
+  width: 1000px; }
+
+.main-footer--right {
+  margin-left: auto;
+  margin-right: 52px;
+  text-align: right;
+  margin-bottom: 42px; }
+
+.main-footer-soc {
+  font-size: 0;
+  margin-top: 35px; }
+
+.main-footer-soc p {
+  width: 65px;
+  margin: 0;
+  margin-right: 19px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff; }
+
+.footer-soc__social {
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 25px;
+  margin-right: 19px; }
+  .footer-soc__social:last-child {
+    margin-left: 4px;
+    margin-right: 0; }
+
+.footer-soc__social--fb {
+  background: url("../../img/fb.png") no-repeat; }
+
+.footer-soc__social--tw {
+  background: url("../../img/tw.png") no-repeat 0 3px; }
+
+.footer-soc__social--inst {
+  background: url("../../img/inst.png") no-repeat; }
+
+.footer-soc__social--xz {
+  background: url("../../img/xz.png") no-repeat; }
+
+.main-footer-copyright {
+  margin-top: 133px; }
+
+.footer__copyright,
+.footer__logo {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 300; }
+
+.footer__copyright {
+  padding-left: 0;
+  margin-right: 25px; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 59, 77, 0.75);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=55);
+  opacity: 1; }
+
+.overlay-visible {
+  display: block; }
+
+.modal-content {
+  position: absolute;
+  top: 215px;
+  left: 50%;
+  z-index: 20;
+  width: 549px;
+  box-sizing: border-box;
+  display: none;
+  padding-top: 23px;
+  padding-left: 22px;
+  padding-right: 17px;
+  padding-bottom: 29px;
+  margin-left: -300px;
+  text-align: left;
+  background: #edeae6;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7); }
+
+input.modal-content__input {
+  width: 510px;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 38px; }
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s; }
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer; }
+
+.modal-content-title {
+  font-family: BentonSansCond-Bold;
+  font-size: 40px;
+  font-weight: 700;
+  color: #283b4d;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 29px; }
+
+.modal-content p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  margin-bottom: 37px; }
+
+p.modal-content__p {
+  font-family: BentonSansCond-Bold;
+  font-size: 25px;
+  font-weight: 700;
+  color: #283b4d;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 11px; }
+
+.icon-password {
+  margin-bottom: 32px; }
+
+.modal-content__button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px; }
+
+.modal-content__btn {
+  height: 58px;
+  padding-top: 23px;
+  padding-bottom: 16px;
+  font-family: BentonSansCond-Bold;
+  font-size: 20px;
+  font-weight: 700;
+  border: none; }
+
+.modal-content__btn--cancel {
+  background: none;
+  color: #283b4d;
+  border: 2px solid #5a8ea1; }
+
+.modal-content a {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center; }
+
+.restore {
+  margin-bottom: 27px; }
+
+.login-form input:focus {
+  /*ПРИ ФОКУСІ*/
+  border-color: #5a8ea1; }
+
+/*------АНІМАЦІЯ ВІКНА ПРИ НЕПРАВИЛЬНИХ ДАНИХ---------------------------------------------*/
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); } }
+
+.modal-error {
+  animation: shake 0.6s; }

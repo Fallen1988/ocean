@@ -172,7 +172,7 @@
 
 <footer class="main-footer">
   <nav class="main-footer-nav">
-    <ul class="footer-nav__list">
+    <ul class="footer-nav__list  main-footer--left  list">
       <li class="footer-nav__item"><a href="#">Who we are</a></li>
       <li class="footer-nav__item"><a href="#">How it Works</a></li>
       <li class="footer-nav__item"><a href="#">What People Are Saying</a></li>
@@ -181,20 +181,47 @@
     </ul>
   </nav>
 
-  <div class="main-footer-soc">
-    <p>Follow Us:</p>
-    <a href="#" class="footer-soc__social  footer-soc__social--fb"></a>
-    <a href="#" class="footer-soc__social  footer-soc__social--tw"></a>
-    <a href="#" class="footer-soc__social  footer-soc__social--inst"></a>
-    <a href="#" class="footer-soc__social  footer-soc__social--xz"></a>
-  </div>
+  <div class="main-footer--right">
+    <div class="main-footer-soc">
+      <p class="footer-soc__social">Follow Us:</p>
+      <a href="#" class="footer-soc__social  footer-soc__social--fb"></a>
+      <a href="#" class="footer-soc__social  footer-soc__social--tw"></a>
+      <a href="#" class="footer-soc__social  footer-soc__social--inst"></a>
+      <a href="#" class="footer-soc__social  footer-soc__social--xz"></a>
+    </div>
 
-  <div class="main-footer-copyright">
-    <p class="footer__copyright">Copyright 2017, Ocean Service Center</p>
-    <a href="" class="footer__logo">
-      <img src="" alt="">
-    </a>
+    <div class="main-footer-copyright">
+      <p class="footer__copyright">Copyright 2017, Ocean Service Center</p>
+      <a href="" class="footer__logo">
+        <img src="img/footer-logo.svg" alt="" width="114px" height="43px">
+      </a>
+    </div>
   </div>
 </footer>
+
+<div class="modal-content">
+  <div>
+    <button class="modal-content-close" type="button" title="Закрити"></button>
+    <h2 class="modal-content-title">Log In</h2>
+    <p>Log in using the form below. Use the links below to reset your password or create an account.</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-content__p">Username</p>
+      <input class="icon-user  modal-content__input" type="text" name="login" placeholder="">
+      <p class="modal-content__p">Password</p>
+      <input class="icon-password  modal-content__input" type="password" name="password" placeholder="">
+      <div class="modal-content__button">
+        <button class="btn  modal-content__btn  modal-content__btn--cancel" type="button">Cancel</button>
+        <button class="btn  modal-content__btn" type="submit">Log in</button>
+      </div>
+      <a class="restore" href="#">Lost Your Password?</a>
+      <a class="create-new" href="#">Not a member? Create an account here</a>
+
+    </form>
+  </div>
+</div>
+
+<div class="overlay"></div>
+
+<script src="js/popup.js"></script>
 </body>
 </html>
