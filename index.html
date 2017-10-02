@@ -30,23 +30,23 @@
 <main class="main-page">
   <div class="block-img">
       <div class='sliderA'>
-      <input type="radio" name="slider1" id="slider1_1">
-      <label for="slider1_1"></label>
-      <div>
-        <img src='https://lh3.googleusercontent.com/-XGgw41OSARk/VePicTdAdgI/AAAAAAAAAS4/WeBbxp4ebQg/s400-Ic42/00099_manaisland_1920x1200.jpg' alt=''>
-      </div>
+        <input type="radio" name="slider1" id="slider1_1">
+        <label for="slider1_1"></label>
+        <div>
+          <img src='img/block-img.png' alt='' width="1440px">
+        </div>
 
-      <input type="radio" name="slider1" id="slider1_2"  checked>
-      <label for="slider1_2"></label>
-      <div>
-         <img src='img/block-img.png' alt='' width="100%">
-      </div>
+        <input type="radio" name="slider1" id="slider1_2"  checked>
+        <label for="slider1_2"></label>
+        <div>
+           <img src='img/block-img.png' alt='' width="1440px">
+        </div>
 
-      <input type="radio" name="slider1" id="slider1_3">
-      <label for="slider1_3"></label>
-      <div>
-        <img src='https://lh3.googleusercontent.com/-ikbDMRhLc_I/VePkT4XLFtI/AAAAAAAAATg/qaHqQk89RAw/s400-Ic42/00744_laclahachesunset_1920x1200.jpg' alt=''>
-      </div>
+        <input type="radio" name="slider1" id="slider1_3">
+        <label for="slider1_3"></label>
+        <div>
+          <img src='img/block-img.png' alt=''>
+        </div>
     </div>
 
     <div class="block-img__text">
@@ -215,7 +215,25 @@
       </div>
       <a class="restore" href="#">Lost Your Password?</a>
       <a class="create-new" href="#">Not a member? Create an account here</a>
+    </form>
+  </div>
+</div>
 
+<div class="modal-content  modal-content--pass">
+  <div>
+    <button class="modal-content-close" type="button" title="Закрити"></button>
+    <h2 class="modal-content-title">Forgotten Password</h2>
+    <p>Put in your email address below to have a password reset link sent to you.</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="modal-content__p">Email Address</p>
+      <input class="icon-user  modal-content__input  modal-content__input--pass" type="text" name="login" placeholder="">
+
+      <div class="modal-content__button  modal-content__button--pass">
+        <button class="btn  modal-content__btn  modal-content__btn--cancel  modal-content__btn-pass--cancel" type="button">Cancel</button>
+        <button class="btn  modal-content__btn" type="submit">Send Reset Link</button>
+      </div>
+      <a class="restore" href="#">Back to the Log in form</a>
+      <a class="create-new" href="#">Not a member? Create an account here</a>
     </form>
   </div>
 </div>

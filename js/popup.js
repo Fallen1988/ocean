@@ -5,8 +5,13 @@ var login = popup.querySelector("[name=login]");
 var form = popup.querySelector("form");
 var password = popup.querySelector("[name=password]");
 var storage = localStorage.getItem("login");
+
 var overlay = document.querySelector(".overlay");
 var modalCancel = document.querySelector(".modal-content__btn--cancel");
+
+var restore = document.querySelector(".restore");
+var popupPass = document.querySelector(".modal-content--pass");
+var modalCancelPass = document.querySelector(".modal-content__btn-pass--cancel");
 
 link.addEventListener("click", function(event) {
     event.preventDefault();
@@ -54,4 +59,20 @@ window.addEventListener("keydown", function (event) {
             overlay.classList.remove("overlay-visible");
         }
     }
+});
+
+restore.addEventListener("click", function(event) {
+    event.preventDefault();
+    popupPass.classList.add("modal-content-show");
+    popup.classList.remove("modal-content-show");
+    overlay.classList.add("overlay-visible");
+});
+
+modalCancelPass.addEventListener("click", function(event) {
+    event.preventDefault();
+    if (popupPass.classList.contains("modal-content-show")) {
+        popupPass.classList.remove("modal-content-show");
+        overlay.classList.remove("overlay-visible");
+    }
+
 });

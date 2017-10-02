@@ -656,10 +656,10 @@ a.main-nav--btn {
   border-radius: 8px;
   border: 2px solid white;
   cursor: pointer;
-  z-index: 100;
+  z-index: 15;
   position: relative;
   margin-right: 14px;
-  top: 95%;
+  top: 92%;
   transition: background 0.8s ease-out 0s; }
 
 .sliderA > input + label:hover {
@@ -976,3 +976,12 @@ p.modal-content__p {
 
 .modal-error {
   animation: shake 0.6s; }
+
+input.modal-content__input--pass {
+  margin-bottom: 16px; }
+
+.modal-content__button--pass {
+  margin-bottom: 24px; }
+
+.modal-content--pass {
+  padding-bottom: 23px; }
