@@ -1,5 +1,7 @@
 .main-footer {
   display: flex;
+  position: relative;
+  z-index: 20;
 
   background-color: #283b4d;
 }
