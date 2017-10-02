@@ -58,6 +58,11 @@ window.addEventListener("keydown", function (event) {
             popup.classList.remove("modal-content-show");
             overlay.classList.remove("overlay-visible");
         }
+
+        if (popupPass.classList.contains("modal-content-show")) {
+            popupPass.classList.remove("modal-content-show");
+            overlay.classList.remove("overlay-visible");
+        }
     }
 });
 
