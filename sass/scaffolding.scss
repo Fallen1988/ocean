@@ -5,6 +5,17 @@ body {
   font-family: BentonSansCond-Book;
 }
 
+.container {
+
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container--flex {
+  display: flex;
+}
+
 img {
   max-width: 100%;
   //height: auto;

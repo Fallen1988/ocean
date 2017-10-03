@@ -49,6 +49,14 @@ body {
   margin: 0;
   font-family: BentonSansCond-Book; }
 
+.container {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.container--flex {
+  display: flex; }
+
 img {
   max-width: 100%; }
 
@@ -451,7 +459,7 @@ a.main-nav--btn {
     background-image: url("../../img/oval.png"); }
 
 .block-img__text p {
-  position: relative;
+  position: absolute;
   z-index: 8;
   margin: 0;
   margin-bottom: 35px;
@@ -803,6 +811,9 @@ a.main-nav--btn {
   margin-bottom: 42px; }
 
 .main-footer-soc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 0;
   margin-top: 35px; }
 
@@ -815,8 +826,6 @@ a.main-nav--btn {
   color: #ffffff; }
 
 .footer-soc__social {
-  display: inline-block;
-  vertical-align: top;
   width: 25px;
   height: 25px;
   margin-right: 19px; }
