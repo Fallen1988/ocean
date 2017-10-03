@@ -427,7 +427,7 @@ a.main-nav--btn {
 .page-header__logo--position {
   margin-top: auto; }
 
-.main-nav__item--active {
+a.main-nav__item--active {
   border-bottom: 7px solid #283b4d; }
 
 .block-img {
@@ -1141,3 +1141,6 @@ p.select__shipyard {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
+
+.main-nav__item.main-nav__item--auctions a {
+  padding-bottom: 20px; }

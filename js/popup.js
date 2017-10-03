@@ -13,6 +13,8 @@ var restore = document.querySelector(".restore");
 var popupPass = document.querySelector(".modal-content--pass");
 var modalCancelPass = document.querySelector(".modal-content__btn-pass--cancel");
 
+var backLogin = document.querySelector(".back-login");
+
 link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add("modal-content-show");
@@ -80,4 +82,12 @@ modalCancelPass.addEventListener("click", function(event) {
         overlay.classList.remove("overlay-visible");
     }
 
+});
+
+
+backLogin.addEventListener("click", function (event) {
+    event.preventDefault();
+    popup.classList.add("modal-content-show");
+    overlay.classList.add("overlay-visible");
+    popupPass.classList.remove("modal-content-show");
 });
