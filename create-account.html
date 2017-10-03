@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="build/css/style.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="page-header">
+    <div class="container  container--flex">
+        <div class="page-header__logo  page-header__logo--position">
+            <a href="index.html"> <img src="img/page-header-logo.png" alt="Ocean Service Center" width="225px" height="84px"> </a>
+        </div>
+
+        <div class="page-header__right">
+            <div class="user-block  user-block--position">
+                <a href="#" class="user-block__user  user-block__user--position">Log in</a>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item  main-nav__item--position"><a href="index.html">Who we are</a></li>
+                    <li class="main-nav__item  main-nav__item--position"><a href="auction.html">Auctions</a></li>
+                    <li class="main-nav__item  main-nav__item--position"><a href="#">FAQ</a></li>
+                    <li class="main-nav__item"><a href="#" class="btn  main-nav--btn">Complete form below</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="create-account-main">
+    <div class="container">
+        <section class="create-account-main__header">
+            <h2>Create an Account</h2>
+        </section>
+
+        <div class="create-account-main__form">
+
+            <p class="create-account-main--p">* Required.</p>
+
+            <form class="create-account-form" method="post">
+                <div class="create-account-main__left">
+                    <p>* First Name</p>
+                    <input type="text" name="fitst-name">
+                    <p>* Email Address</p>
+                    <input type="email" name="email">
+                    <h3>Login Information</h3>
+                    <p>* Username</p>
+                    <input type="text" name="user-name">
+                    <p>* Password</p>
+                    <input type="password" name="user-password">
+                </div>
+
+                <div class="create-account-main__right">
+                    <p>* Last Name</p>
+                    <input type="text" name="last-name">
+
+                    <div class="create-account-main__right--block">
+
+                    <section class="select">
+                        <p class="select__shipyard">I am a:</p>
+                        <select class="select__select" name="I-am-a:">
+                            <option selected value="Shipyard">Shipyard</option>
+                        </select>
+                    </section>
+                    <h3>Shipyard Details</h3>
+                    <p>* Shipyard Name</p>
+                    <input type="text" name="shipyard-name">
+                    <p>* Phone</p>
+                    <input type="text" name="phone">
+                    <p>* Business Email</p>
+                    <input type="email" name="business-email">
+                    <p>Shipyard Website</p>
+                    <input type="text" name="shipyard-website" placeholder="http://">
+                    <p>Shipyard Address</p>
+                    <input type="text" name="shipyard-address">
+                    <p>Shipyard Address 2</p>
+                    <input type="text" name="shipyard-address-2">
+
+                    <div class="create-account-main__right-down">
+                        <section>
+                            <p>* City</p>
+                            <input type="text" name="city">
+                        </section>
+
+                        <section class="select  select--state">
+                            <p>* State</p>
+                            <select name="state:" class="select__select  select__state">
+                                <option selected value="Florida">Florida</option>
+                            </select>
+                        </section>
+
+                        <section>
+                            <p>* Zip Code</p>
+                            <input type="text" name="zip-code" class="zip-code">
+                        </section>
+
+                        <div class="">
+                            <button type="submit" class="btn  create--btn" formmethod="post">Create Account</button>
+                        </div>
+                    </div>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="main-footer">
+    <div class="container  container--flex">
+        <nav class="main-footer-nav">
+            <ul class="footer-nav__list  main-footer--left  list">
+                <li class="footer-nav__item"><a href="#">Who we are</a></li>
+                <li class="footer-nav__item"><a href="#">How it Works</a></li>
+                <li class="footer-nav__item"><a href="#">What People Are Saying</a></li>
+                <li class="footer-nav__item"><a href="#">FAQs</a></li>
+                <li class="footer-nav__item"><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-footer--right">
+            <div class="main-footer-soc">
+                <p>Follow Us:</p>
+                <a href="#" class="footer-soc__social  footer-soc__social--fb"></a>
+                <a href="#" class="footer-soc__social  footer-soc__social--tw"></a>
+                <a href="#" class="footer-soc__social  footer-soc__social--inst"></a>
+                <a href="#" class="footer-soc__social  footer-soc__social--xz"></a>
+            </div>
+
+            <div class="main-footer-copyright">
+                <p class="footer__copyright">Copyright 2017, Ocean Service Center</p>
+                <a href="index.html" class="footer__logo">
+                    <img src="img/footer-logo.svg" alt="" width="114px" height="43px">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

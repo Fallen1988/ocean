@@ -1,0 +1,50 @@
+.select {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  margin-bottom: 87px;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    left: 197px;
+    top: 12px;
+
+    background: url("../../img/icons/arrow-down.png") no-repeat;
+  }
+}
+
+p.select__shipyard {
+  font-family: BentonSansCond-Book;
+  font-size: 25px;
+  font-weight: 300;
+  color: #283b4d;
+}
+
+.select__select {
+  //position: relative;
+  //z-index: 10;
+  width: 145px;
+  height: 40px;
+
+  padding-left: 23px;
+  padding-bottom: 8px;
+  padding-top: 5px;
+  margin-left: 14px;
+
+  font-family: Gotham-Book;
+  font-size: 14px;
+  color: #424753;
+  border: 1px solid #e0e0e5;
+  border-radius: 5px;
+
+  //забрати стрілку з селекта
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
