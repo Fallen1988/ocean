@@ -33,5 +33,69 @@
     </div>
 </header>
 
+<main class="auctions-main">
+    <div class="auctions-main__header">
+        <h1 class="auctions-main__title">Repair, Survey & Refit Auctions</h1>
+    </div>
+
+    <div class="auctions-main__left">
+
+        <form action="" method="post" class="auctions-form">
+
+            <div class="auctions-main__top">
+                <h2>Showing Auctions</h2>
+                <input checked type="radio" class="auctions-form__radio" id="auctions-form__radio--1" name="auctions-form__radio" value="Repairs">
+                <label for="auctions-form__radio--1">Repairs</label>
+                <input type="radio" class="auctions-form__radio" id="auctions-form__radio--2" name="auctions-form__radio" value="Survey">
+                <label for="auctions-form__radio--2">Survey</label>
+                <input type="radio" class="auctions-form__radio" id="auctions-form__radio--3" name="auctions-form__radio" value="Refit">
+                <label for="auctions-form__radio--3">Refit</label>
+            </div>
+
+            <div class="auctions-main__down">
+                <input type="text" name="seatch" class="auctions-form__search" placeholder="Enter keywords here…">
+                <p class="auctions-form__title">Within…</p>
+                <div class="auctions-form__miles">
+                    <section class="select  select--miles">
+                        <select name="miles" class="select__select  auctions-form__select">
+                            <option selected value="25 Miles">25 Miles</option>
+                        </select>
+                    </section>
+                    <span>of</span>
+                    <input class="auctions-form__zip-code" type="text" name="Zip Code" placeholder="Zip Code">
+                </div>
+                <p class="auctions-form__title">Auction Listed on/after…</p>
+                <input type="date" placeholder="Choose a date…" name="listed">
+                <p class="auctions-form__title">Auction Ending on/before…</p>
+                <input type="date" placeholder="Choose a date…" name="ending">
+                <p class="auctions-form__title">Bid Status</p>
+                <section class="radio  auctions-form__bids">
+                    <input type="radio" class="radio-btn" name="auctions-form__bids" value="With bids" id="auctions-form__radio-btn-1">
+                    <label class="auctions-form__bids--label" for="auctions-form__radio-btn-1">With bids</label>
+                    <input type="radio" class="radio-btn" name="auctions-form__bids" value="No bids" id="auctions-form__radio-btn-2">
+                    <label class="auctions-form__bids--label" for="auctions-form__radio-btn-2">No bids</label>
+                    <input checked type="radio" class="radio-btn" name="auctions-form__bids" value="Show both bid and unbid" id="auctions-form__radio-btn-3">
+                    <label class="auctions-form__bids--label" for="auctions-form__radio-btn-3">Show both bid and unbid</label>
+                </section>
+                <p class="auctions-form__title">Minimum Bid…</p>
+                <section class="auctions-form__qwer">
+                    <input class="auctions-form__number" type="number" name="minimum" placeholder="Enter amount…">
+                </section>
+                <p class="auctions-form__title">Maximum Bid…</p>
+                <section class="auctions-form__qwer">
+                    <input class="auctions-form__number" type="number" name="maximum" placeholder="Enter amount…">
+                </section>
+                <section class="auctions-form__search-btn">
+                    <input class="btn  auctions-form--btn" type="submit" value="Refine Search">
+                </section>
+                <input class="auctions-form__reset" type="reset" value="Clear Search Options -">
+            </div>
+        </form>
+    </div>
+
+    <div class="auctions-main__right"></div>
+
+</main>
+
 </body>
 </html>

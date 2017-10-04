@@ -1,0 +1,25 @@
+.radio label{
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-btn:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-btn:not(checked) + label::before {
+  content: "";
+  position: absolute;
+
+}
+
+.radio-btn:not(checked) + label::after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+}
+
+.radio-btn:checked + label::after {
+  opacity: 1;
+}

@@ -1,0 +1,146 @@
+.auctions-main__down {
+  background-color: #f7f6f4;
+  padding-top: 31px;
+  padding-left: 19px;
+}
+
+.auctions-form__search {
+  width: 217px;
+  border: none;
+  border-bottom: 1px solid #979797;
+  background-color: #f7f6f4;
+  padding-bottom: 6px;
+
+  font-size: 14px;
+  color: #283b4d;
+}
+
+.auctions-form__title {
+  margin-top: 21px;
+  margin-bottom: 10px;
+
+  font-family: BentonSansCond-Bold;
+  font-weight: 700;
+  font-size: 14px;
+  color: #283b4d;
+}
+
+.auctions-form__miles {
+  display: flex;
+  align-items: baseline;
+}
+
+.auctions-form__miles span {
+  font-family: BentonSansCond-Bold;
+  font-weight: 700;
+  font-size: 14px;
+  color: #283b4d;
+}
+
+.auctions-form__select {
+  position: relative;
+
+  margin: 0;
+  width: 101px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 13px;
+  padding-bottom: 11px;
+}
+
+.select--miles{
+  width: 101px;
+  height: 40px;
+  margin-right: 9px;
+  margin-bottom: 0;
+
+  &::after{
+    left: 75px;
+    top: 10px;
+    opacity: 0.7;
+  }
+}
+
+.auctions-form__zip-code {
+  width: 85px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-left: 9px;
+
+  font-family: Gotham-Book;
+  font-size: 14px;
+  color: #424753;
+
+  padding-left: 11px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+
+  border: 1px solid #e0e0e5;
+  border-radius: 5px;
+}
+
+.auctions-form__number {
+  width: 217px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e5;
+  border-radius: 5px;
+  padding-left: 55px;
+
+  font-family: Gotham-Book;
+  font-size: 14px;
+  color: #424753;
+}
+
+.auctions-form__qwer {
+  position: relative;
+}
+
+.auctions-form__qwer::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 40px;
+  left: 0;
+
+  background: url("../../img/dollar.png") no-repeat;
+}
+
+.auctions-form--btn {
+  width: 217px;
+  height: 46px;
+  box-sizing: border-box;
+  padding-left: 11px;
+  text-align: left;
+  border: none;
+
+
+}
+
+.auctions-form__search-btn {
+  position: relative;
+  margin-top: 24px;
+  margin-bottom: 22px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 9px;
+    right: 28px;
+
+    background-image: url("../../img/search.png");
+  }
+}
+
+.auctions-form__reset {
+  border: none;
+  background: #ededeb;
+  width: 249px;
+  height: 24px;
+  margin-left: -19px;
+
+  font-size: 15px;
+  color: #283b4d;
+}
