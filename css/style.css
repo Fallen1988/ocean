@@ -1374,7 +1374,6 @@ p.select__shipyard {
     height: 28px;
     top: 9px;
     right: 28px;
-    cursor: default;
     background-image: url("../../img/search.png"); }
 
 .auctions-form__reset {
