@@ -1312,6 +1312,25 @@ p.select__shipyard {
   border: 1px solid #e0e0e5;
   border-radius: 5px; }
 
+.auctions-form__date {
+  width: 217px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e5;
+  border-radius: 5px;
+  padding-left: 11px;
+  padding-right: 45px; }
+
+.auctions-form__date--calendar {
+  position: relative; }
+  .auctions-form__date--calendar:after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 40px;
+    right: 13px;
+    background-image: url("../../img/calendar.png"); }
+
 .auctions-form__number {
   width: 217px;
   height: 40px;
@@ -1340,12 +1359,14 @@ p.select__shipyard {
   box-sizing: border-box;
   padding-left: 11px;
   text-align: left;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .auctions-form__search-btn {
   position: relative;
   margin-top: 24px;
-  margin-bottom: 22px; }
+  margin-bottom: 22px;
+  overflow: hidden; }
   .auctions-form__search-btn::after {
     content: "";
     position: absolute;
@@ -1353,6 +1374,7 @@ p.select__shipyard {
     height: 28px;
     top: 9px;
     right: 28px;
+    cursor: default;
     background-image: url("../../img/search.png"); }
 
 .auctions-form__reset {
@@ -1361,6 +1383,7 @@ p.select__shipyard {
   width: 249px;
   height: 24px;
   margin-left: -19px;
+  cursor: pointer;
   font-size: 15px;
   color: #283b4d; }
 

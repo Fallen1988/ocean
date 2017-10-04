@@ -56,18 +56,26 @@
                 <input type="text" name="seatch" class="auctions-form__search" placeholder="Enter keywords here…">
                 <p class="auctions-form__title">Within…</p>
                 <div class="auctions-form__miles">
-                    <section class="select  select--miles">
+                    <label class="select  select--miles">
                         <select name="miles" class="select__select  auctions-form__select">
                             <option selected value="25 Miles">25 Miles</option>
                         </select>
-                    </section>
+                    </label>
                     <span>of</span>
                     <input class="auctions-form__zip-code" type="text" name="Zip Code" placeholder="Zip Code">
                 </div>
+
                 <p class="auctions-form__title">Auction Listed on/after…</p>
-                <input type="date" placeholder="Choose a date…" name="listed">
+
+                <label class="auctions-form__date--calendar">
+                    <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="listed">
+                </label>
+
                 <p class="auctions-form__title">Auction Ending on/before…</p>
-                <input type="date" placeholder="Choose a date…" name="ending">
+                <label class="auctions-form__date--calendar">
+                    <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="ending">
+                </label>
+
                 <p class="auctions-form__title">Bid Status</p>
                 <section class="radio  auctions-form__bids">
                     <input type="radio" class="radio-btn" name="auctions-form__bids" value="With bids" id="auctions-form__radio-btn-1">
@@ -78,16 +86,16 @@
                     <label class="auctions-form__bids--label" for="auctions-form__radio-btn-3">Show both bid and unbid</label>
                 </section>
                 <p class="auctions-form__title">Minimum Bid…</p>
-                <section class="auctions-form__qwer">
+                <label class="auctions-form__qwer">
                     <input class="auctions-form__number" type="number" name="minimum" placeholder="Enter amount…">
-                </section>
+                </label>
                 <p class="auctions-form__title">Maximum Bid…</p>
-                <section class="auctions-form__qwer">
+                <label class="auctions-form__qwer">
                     <input class="auctions-form__number" type="number" name="maximum" placeholder="Enter amount…">
-                </section>
-                <section class="auctions-form__search-btn">
+                </label>
+                <label class="auctions-form__search-btn">
                     <input class="btn  auctions-form--btn" type="submit" value="Refine Search">
-                </section>
+                </label>
                 <input class="auctions-form__reset" type="reset" value="Clear Search Options -">
             </div>
         </form>
