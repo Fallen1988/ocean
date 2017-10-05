@@ -85,6 +85,48 @@ img {
   text-decoration: none;
   color: #ffffff; }
 
+.paginator a {
+  text-decoration: none;
+  font-family: BentonSansCond-Light;
+  font-size: 20px;
+  color: #283b4d;
+  padding: 5px 10px; }
+  .paginator a:hover {
+    font-family: BentonSansCond-Bold; }
+
+a.paginator__current {
+  font-family: BentonSansCond-Bold;
+  font-weight: 700; }
+
+a.paginator__bold {
+  font-family: BentonSansCond-Bold;
+  font-weight: 700; }
+
+a.paginator__prev {
+  position: relative;
+  padding-left: 25px; }
+  a.paginator__prev::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background: url("../../img/rectangle-41.svg") no-repeat;
+    transform: rotate(180deg);
+    left: 5px;
+    top: 5px; }
+
+a.paginator__next {
+  position: relative;
+  padding-right: 25px; }
+  a.paginator__next::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background: url("../../img/rectangle-41.svg") no-repeat;
+    right: 5px;
+    top: 12px; }
+
 .page-header {
   display: flex;
   position: relative;
@@ -1225,7 +1267,8 @@ p.select__shipyard {
 
 .auctions-main__left {
   width: 249px;
-  margin-left: 30px; }
+  margin-left: 30px;
+  margin-right: 25px; }
 
 .auctions-main__left h2 {
   margin-top: 0;
@@ -1428,3 +1471,147 @@ p.select__shipyard {
 
 .auctions-form__bids--label {
   margin-bottom: 9px; }
+
+.auctions-main__main {
+  display: flex;
+  justify-content: space-between; }
+
+.auctions-main__right {
+  width: 1136px;
+  box-sizing: border-box;
+  padding-right: 22px; }
+
+.auctions-main__right-header {
+  width: 1094px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #f7f6f4;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 18px; }
+
+.auctions-main__right-header p {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  color: #4a4a4a;
+  letter-spacing: 0.5px; }
+
+.auctions-main__right-header span {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.auctions-main__right--search {
+  font-size: 14px;
+  color: #4a4a4a;
+  letter-spacing: 0.5px; }
+
+.auctions-main__right--wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.auctions-main__item {
+  width: 544px;
+  min-height: 208px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between; }
+
+.auctions-main__descr {
+  width: 295px;
+  height: 208px;
+  padding-left: 15px;
+  padding-right: 17px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  background-color: #f7f6f4; }
+
+.auctions-main__descr h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 19px;
+  color: #283b4d;
+  margin-bottom: 5px; }
+
+.auctions-main__descr h3 + p {
+  margin: 0;
+  font-size: 12px;
+  color: #283b4d;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #979797; }
+
+.auctions-main__bid-range {
+  margin-top: 8px;
+  text-align: center; }
+
+.auctions-main__bid-range p {
+  margin: 0;
+  font-size: 12px;
+  color: #283b4d; }
+
+p.auctions-main__bid-amount {
+  font-family: BentonSansCond-Bold;
+  font-weight: 700;
+  font-size: 24px;
+  color: #283b4d;
+  line-height: 23px;
+  margin-top: 19px;
+  margin-bottom: 14px; }
+
+.auctions-main__bid-range p:last-of-type {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #979797; }
+
+.auctions-main__bid-date {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11px; }
+
+.auctions-main__bid-ends p {
+  font-size: 12px;
+  color: #283b4d;
+  line-height: 11px;
+  margin: 0;
+  margin-bottom: 7px; }
+
+.auctions-main__bid-ends span {
+  font-family: BentonSansCond-Bold;
+  font-weight: 700; }
+
+.auctions-main__bid-btn {
+  padding: 0;
+  width: 145px;
+  height: 34px;
+  box-sizing: border-box;
+  background: none;
+  font-size: 16px;
+  color: #00467f;
+  line-height: 15px;
+  border: 2px solid #5a8ea1;
+  padding-top: 10px;
+  padding-bottom: 7px; }
+
+.auctions--paginator {
+  width: 390px;
+  margin-left: auto;
+  margin-right: 16px;
+  margin-top: 34px;
+  margin-bottom: 67px; }
+
+.select--res::after {
+  left: 57px;
+  top: 14px; }
+
+.select--res select {
+  margin-left: 0;
+  width: 81px;
+  padding-left: 24px;
+  margin-right: 14px; }
+
+.select--res p {
+  font-family: BentonSansCond-Light;
+  font-size: 20px;
+  line-height: 19px;
+  color: #283b4d;
+  margin: 0; }

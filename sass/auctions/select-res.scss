@@ -1,0 +1,22 @@
+.select--res {
+
+  &::after {
+    left: 57px;
+    top: 14px;
+  }
+}
+
+.select--res select {
+  margin-left: 0;
+  width: 81px;
+  padding-left: 24px;
+  margin-right: 14px;
+}
+
+.select--res p {
+  font-family: BentonSansCond-Light;
+  font-size: 20px;
+  line-height: 19px;
+  color: #283b4d;
+  margin: 0;
+}

@@ -33,76 +33,287 @@
     </div>
 </header>
 
-<main class="auctions-main">
+<main class="auctions-main  container">
     <div class="auctions-main__header">
         <h1 class="auctions-main__title">Repair, Survey & Refit Auctions</h1>
     </div>
 
-    <div class="auctions-main__left">
-
-        <form action="" method="post" class="auctions-form">
-
-            <div class="auctions-main__top">
-                <h2>Showing Auctions</h2>
-                <input checked type="radio" class="auctions-form__radio" id="auctions-form__radio--1" name="auctions-form__radio" value="Repairs">
-                <label for="auctions-form__radio--1">Repairs</label>
-                <input type="radio" class="auctions-form__radio" id="auctions-form__radio--2" name="auctions-form__radio" value="Survey">
-                <label for="auctions-form__radio--2">Survey</label>
-                <input type="radio" class="auctions-form__radio" id="auctions-form__radio--3" name="auctions-form__radio" value="Refit">
-                <label for="auctions-form__radio--3">Refit</label>
-            </div>
-
-            <div class="auctions-main__down">
-                <input type="text" name="seatch" class="auctions-form__search" placeholder="Enter keywords here…">
-                <p class="auctions-form__title">Within…</p>
-                <div class="auctions-form__miles">
-                    <label class="select  select--miles">
-                        <select name="miles" class="select__select  auctions-form__select">
-                            <option selected value="25 Miles">25 Miles</option>
-                        </select>
-                    </label>
-                    <span>of</span>
-                    <input class="auctions-form__zip-code" type="text" name="Zip Code" placeholder="Zip Code">
+    <div class="auctions-main__main">
+        <div class="auctions-main__left">
+            <form action="" method="post" class="auctions-form">
+                <div class="auctions-main__top">
+                    <h2>Showing Auctions</h2>
+                    <input checked type="radio" class="auctions-form__radio" id="auctions-form__radio--1" name="auctions-form__radio" value="Repairs">
+                    <label for="auctions-form__radio--1">Repairs</label>
+                    <input type="radio" class="auctions-form__radio" id="auctions-form__radio--2" name="auctions-form__radio" value="Survey">
+                    <label for="auctions-form__radio--2">Survey</label>
+                    <input type="radio" class="auctions-form__radio" id="auctions-form__radio--3" name="auctions-form__radio" value="Refit">
+                    <label for="auctions-form__radio--3">Refit</label>
                 </div>
 
-                <p class="auctions-form__title">Auction Listed on/after…</p>
+                <div class="auctions-main__down">
+                    <input type="text" name="seatch" class="auctions-form__search" placeholder="Enter keywords here…">
+                    <p class="auctions-form__title">Within…</p>
+                    <div class="auctions-form__miles">
+                        <label class="select  select--miles">
+                            <select name="miles" class="select__select  auctions-form__select">
+                                <option selected value="25 Miles">25 Miles</option>
+                            </select>
+                        </label>
+                        <span>of</span>
+                        <input class="auctions-form__zip-code" type="text" name="Zip Code" placeholder="Zip Code">
+                    </div>
 
-                <label class="auctions-form__date--calendar">
-                    <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="listed">
-                </label>
+                    <p class="auctions-form__title">Auction Listed on/after…</p>
 
-                <p class="auctions-form__title">Auction Ending on/before…</p>
-                <label class="auctions-form__date--calendar">
-                    <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="ending">
-                </label>
+                    <label class="auctions-form__date--calendar">
+                        <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="listed">
+                    </label>
 
-                <p class="auctions-form__title">Bid Status</p>
-                <section class="radio  auctions-form__bids">
-                    <input type="radio" class="radio-btn" name="auctions-form__bids" value="With bids" id="auctions-form__radio-btn-1">
-                    <label class="auctions-form__bids--label" for="auctions-form__radio-btn-1">With bids</label>
-                    <input type="radio" class="radio-btn" name="auctions-form__bids" value="No bids" id="auctions-form__radio-btn-2">
-                    <label class="auctions-form__bids--label" for="auctions-form__radio-btn-2">No bids</label>
-                    <input checked type="radio" class="radio-btn" name="auctions-form__bids" value="Show both bid and unbid" id="auctions-form__radio-btn-3">
-                    <label class="auctions-form__bids--label" for="auctions-form__radio-btn-3">Show both bid and unbid</label>
-                </section>
-                <p class="auctions-form__title">Minimum Bid…</p>
-                <label class="auctions-form__qwer">
-                    <input class="auctions-form__number" type="number" name="minimum" placeholder="Enter amount…">
-                </label>
-                <p class="auctions-form__title">Maximum Bid…</p>
-                <label class="auctions-form__qwer">
-                    <input class="auctions-form__number" type="number" name="maximum" placeholder="Enter amount…">
-                </label>
-                <label class="auctions-form__search-btn">
-                    <input class="btn  auctions-form--btn" type="submit" value="Refine Search">
-                </label>
-                <input class="auctions-form__reset" type="reset" value="Clear Search Options -">
+                    <p class="auctions-form__title">Auction Ending on/before…</p>
+                    <label class="auctions-form__date--calendar">
+                        <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="ending">
+                    </label>
+
+                    <p class="auctions-form__title">Bid Status</p>
+                    <section class="radio  auctions-form__bids">
+                        <input type="radio" class="radio-btn" name="auctions-form__bids" value="With bids" id="auctions-form__radio-btn-1">
+                        <label class="auctions-form__bids--label" for="auctions-form__radio-btn-1">With bids</label>
+                        <input type="radio" class="radio-btn" name="auctions-form__bids" value="No bids" id="auctions-form__radio-btn-2">
+                        <label class="auctions-form__bids--label" for="auctions-form__radio-btn-2">No bids</label>
+                        <input checked type="radio" class="radio-btn" name="auctions-form__bids" value="Show both bid and unbid" id="auctions-form__radio-btn-3">
+                        <label class="auctions-form__bids--label" for="auctions-form__radio-btn-3">Show both bid and unbid</label>
+                    </section>
+                    <p class="auctions-form__title">Minimum Bid…</p>
+                    <label class="auctions-form__qwer">
+                        <input class="auctions-form__number" type="number" name="minimum" placeholder="Enter amount…">
+                    </label>
+                    <p class="auctions-form__title">Maximum Bid…</p>
+                    <label class="auctions-form__qwer">
+                        <input class="auctions-form__number" type="number" name="maximum" placeholder="Enter amount…">
+                    </label>
+                    <label class="auctions-form__search-btn">
+                        <input class="btn  auctions-form--btn" type="submit" value="Refine Search">
+                    </label>
+                    <input class="auctions-form__reset" type="reset" value="Clear Search Options -">
+                </div>
+            </form>
+        </div>
+
+        <div class="auctions-main__right">
+            <div class="auctions-main__right-header">
+                <p>Showing Search Results
+                    <span>-</span>
+                    <a href="#" class="auctions-main__right--search">Reset Search</a>
+                </p>
             </div>
-        </form>
+
+            <div class="auctions-main__right--wrapper">
+                <div class="auctions-main__right-left">
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">$24,187  -  $31,264</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">Be the first to bid</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">$24,187  -  $31,264</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">Be the first to bid</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <label class="select  select--res">
+                        <select name="result" class="select__select">
+                            <option selected value="8">8</option>
+                        </select>
+                        <p>Results per page</p>
+                    </label>
+                </div>
+                <div class="auctions-main__right-right">
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">Be the first to bid</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">Be the first to bid</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">Be the first to bid</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="auctions-main__item">
+                        <section class="auctions-main__img">
+                            <img src="img/boat.jpg" alt="" width="249px" height="208px">
+                        </section>
+                        <section class="auctions-main__descr">
+                            <h3>54’ Bertram Sportfish 1982 </h3>
+                            <p>Miami, FL  -  33149</p>
+                            <section class="auctions-main__bid-range">
+                                <p>Current Bid Range</p>
+                                <p class="auctions-main__bid-amount">Be the first to bid</p>
+                                <p>8 Bidders</p>
+                            </section>
+                            <section class="auctions-main__bid-date">
+                                <div class="auctions-main__bid-ends">
+                                    <p><span>Listed:</span>  4/13/17</p>
+                                    <p><span>Ends:</span>  5/31/17</p>
+                                </div>
+                                <div class="">
+                                    <a class="btn  auctions-main__bid-btn" href="">Bid on Repair</a>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="paginator  auctions--paginator">
+                        <a class="paginator__prev  paginator__bold" href="#prev">Previous page</a>
+                        <a href="#">1</a>
+                        <a class="paginator__current">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a class="paginator__next  paginator__bold" href="#next">Next page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="auctions-main__right"></div>
-
 </main>
 
 </body>

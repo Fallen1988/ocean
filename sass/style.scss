@@ -1,6 +1,7 @@
 @import "fonts";
 @import "scaffolding";
 @import "list";
+@import "paginator";
 
 
 @import "auction/page-header";
@@ -32,8 +33,11 @@
 @import "auctions/auctions-main-header";
 @import "auctions/auctions-main-left-up";
 @import "auctions/auctions-main-left-down";
-@import "../radio-btn";
+@import "radio-btn";
 @import "auctions/bid-status";
+@import "auctions/auctions-main__right";
+@import "auctions/auctions-paginator";
+@import "auctions/select-res";
 
 
 

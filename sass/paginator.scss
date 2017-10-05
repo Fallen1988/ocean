@@ -1,0 +1,55 @@
+.paginator a {
+  text-decoration: none;
+  font-family: BentonSansCond-Light;
+  font-size: 20px;
+  color: #283b4d;
+
+  padding: 5px 10px;
+
+
+
+  &:hover {
+    font-family: BentonSansCond-Bold;
+  }
+}
+
+a.paginator__current {
+  font-family: BentonSansCond-Bold;
+  font-weight: 700;
+}
+
+a.paginator__bold {
+  font-family: BentonSansCond-Bold;
+  font-weight: 700;
+}
+
+a.paginator__prev {
+  position: relative;
+  padding-left: 25px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background: url("../../img/rectangle-41.svg") no-repeat;
+    transform: rotate(180deg);
+    left: 5px;
+    top: 5px;
+  }
+}
+
+a.paginator__next {
+  position: relative;
+  padding-right: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background: url("../../img/rectangle-41.svg") no-repeat;
+    right: 5px;
+    top: 12px;
+  }
+}
