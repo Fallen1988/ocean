@@ -11,6 +11,8 @@
   background-color: #f7f6f4;
   padding-bottom: 6px;
 
+  outline: none;
+
   font-size: 14px;
   color: #283b4d;
 }
@@ -126,6 +128,7 @@
   width: 45px;
   height: 40px;
   left: 0;
+  top: 26px;
 
   background: url("../../img/dollar.png") no-repeat;
 }

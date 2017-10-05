@@ -8,7 +8,7 @@
 <body>
 
 <header class="page-header">
-    <div class="container  container--flex">
+    <div class="container  container-flex--header">
         <div class="page-header__logo">
             <a href="index.html">
                 <img src="img/page-header-logo.png" alt="Ocean Service Center" width="225px" height="84px">
@@ -53,8 +53,9 @@
 
                 <div class="auctions-main__down">
                     <input type="text" name="seatch" class="auctions-form__search" placeholder="Enter keywords here…">
-                    <p class="auctions-form__title">Within…</p>
-                    <div class="auctions-form__miles">
+                    <label>
+                        <p class="auctions-form__title">Within…
+                        <div class="auctions-form__miles">
                         <label class="select  select--miles">
                             <select name="miles" class="select__select  auctions-form__select">
                                 <option selected value="25 Miles">25 Miles</option>
@@ -63,33 +64,37 @@
                         <span>of</span>
                         <input class="auctions-form__zip-code" type="text" name="Zip Code" placeholder="Zip Code">
                     </div>
-
-                    <p class="auctions-form__title">Auction Listed on/after…</p>
+                    </label>
 
                     <label class="auctions-form__date--calendar">
+                        <p class="auctions-form__title">Auction Listed on/after…</p>
                         <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="listed">
                     </label>
 
-                    <p class="auctions-form__title">Auction Ending on/before…</p>
+
                     <label class="auctions-form__date--calendar">
+                        <p class="auctions-form__title">Auction Ending on/before…</p>
                         <input class="auctions-form__date" type="text" placeholder="Choose a date…" onfocus="(this.type='date')" onblur="(this.type='text')" name="ending">
                     </label>
 
-                    <p class="auctions-form__title">Bid Status</p>
-                    <section class="radio  auctions-form__bids">
+
+                    <label class="radio  auctions-form__bids">
+                        <p class="auctions-form__title">Bid Status</p>
                         <input type="radio" class="radio-btn" name="auctions-form__bids" value="With bids" id="auctions-form__radio-btn-1">
                         <label class="auctions-form__bids--label" for="auctions-form__radio-btn-1">With bids</label>
                         <input type="radio" class="radio-btn" name="auctions-form__bids" value="No bids" id="auctions-form__radio-btn-2">
                         <label class="auctions-form__bids--label" for="auctions-form__radio-btn-2">No bids</label>
                         <input checked type="radio" class="radio-btn" name="auctions-form__bids" value="Show both bid and unbid" id="auctions-form__radio-btn-3">
                         <label class="auctions-form__bids--label" for="auctions-form__radio-btn-3">Show both bid and unbid</label>
-                    </section>
-                    <p class="auctions-form__title">Minimum Bid…</p>
+                    </label>
+
                     <label class="auctions-form__qwer">
+                        <p class="auctions-form__title">Minimum Bid…</p>
                         <input class="auctions-form__number" type="number" name="minimum" placeholder="Enter amount…">
                     </label>
-                    <p class="auctions-form__title">Maximum Bid…</p>
+
                     <label class="auctions-form__qwer">
+                        <p class="auctions-form__title">Maximum Bid…</p>
                         <input class="auctions-form__number" type="number" name="maximum" placeholder="Enter amount…">
                     </label>
                     <label class="auctions-form__search-btn">

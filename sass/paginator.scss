@@ -1,3 +1,7 @@
+.paginator {
+  display: flex;
+}
+
 .paginator a {
   text-decoration: none;
   font-family: BentonSansCond-Light;
@@ -5,12 +9,6 @@
   color: #283b4d;
 
   padding: 5px 10px;
-
-
-
-  &:hover {
-    font-family: BentonSansCond-Bold;
-  }
 }
 
 a.paginator__current {
@@ -26,30 +24,32 @@ a.paginator__bold {
 a.paginator__prev {
   position: relative;
   padding-left: 25px;
+  display: flex;
+  align-items: center;
 
   &::before {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 20px;
+    width: 11px;
+    height: 13px;
     background: url("../../img/rectangle-41.svg") no-repeat;
     transform: rotate(180deg);
     left: 5px;
-    top: 5px;
   }
 }
 
 a.paginator__next {
   position: relative;
   padding-right: 25px;
+  display: flex;
+  align-items: center;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 20px;
+    width: 11px;
+    height: 13px;
     background: url("../../img/rectangle-41.svg") no-repeat;
     right: 5px;
-    top: 12px;
   }
 }

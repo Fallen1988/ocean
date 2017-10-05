@@ -54,8 +54,13 @@ body {
   margin-right: auto;
   margin-left: auto; }
 
-.container--flex {
-  display: flex; }
+.container-flex--header {
+  display: flex;
+  background-color: #edeae6; }
+
+.container-flex--footer {
+  display: flex;
+  background-color: #283b4d; }
 
 img {
   max-width: 100%; }
@@ -85,14 +90,15 @@ img {
   text-decoration: none;
   color: #ffffff; }
 
+.paginator {
+  display: flex; }
+
 .paginator a {
   text-decoration: none;
   font-family: BentonSansCond-Light;
   font-size: 20px;
   color: #283b4d;
   padding: 5px 10px; }
-  .paginator a:hover {
-    font-family: BentonSansCond-Bold; }
 
 a.paginator__current {
   font-family: BentonSansCond-Bold;
@@ -104,34 +110,35 @@ a.paginator__bold {
 
 a.paginator__prev {
   position: relative;
-  padding-left: 25px; }
+  padding-left: 25px;
+  display: flex;
+  align-items: center; }
   a.paginator__prev::before {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 20px;
+    width: 11px;
+    height: 13px;
     background: url("../../img/rectangle-41.svg") no-repeat;
     transform: rotate(180deg);
-    left: 5px;
-    top: 5px; }
+    left: 5px; }
 
 a.paginator__next {
   position: relative;
-  padding-right: 25px; }
-  a.paginator__next::after {
+  padding-right: 25px;
+  display: flex;
+  align-items: center; }
+  a.paginator__next::before {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 20px;
+    width: 11px;
+    height: 13px;
     background: url("../../img/rectangle-41.svg") no-repeat;
-    right: 5px;
-    top: 12px; }
+    right: 5px; }
 
 .page-header {
   display: flex;
   position: relative;
-  z-index: 10;
-  background-color: #edeae6; }
+  z-index: 10; }
 
 .page-header__logo {
   padding-left: 58px;
@@ -560,14 +567,14 @@ a.main-nav__item--active {
 .container--works {
   width: 1440px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  background-color: #f7f6f4; }
 
 .works {
   margin-right: auto;
   margin-left: auto;
   padding-top: 62px;
-  text-align: center;
-  background-color: #f7f6f4; }
+  text-align: center; }
 
 .main-h2 {
   margin: 0;
@@ -840,8 +847,7 @@ a.main-nav__item--active {
 .main-footer {
   display: flex;
   position: relative;
-  z-index: 20;
-  background-color: #283b4d; }
+  z-index: 20; }
 
 .footer-nav__item {
   display: inline-block;
@@ -1301,6 +1307,7 @@ p.select__shipyard {
   border-bottom: 1px solid #979797;
   background-color: #f7f6f4;
   padding-bottom: 6px;
+  outline: none;
   font-size: 14px;
   color: #283b4d; }
 
@@ -1394,6 +1401,7 @@ p.select__shipyard {
   width: 45px;
   height: 40px;
   left: 0;
+  top: 26px;
   background: url("../../img/dollar.png") no-repeat; }
 
 .auctions-form--btn {
@@ -1482,7 +1490,7 @@ p.select__shipyard {
   padding-right: 22px; }
 
 .auctions-main__right-header {
-  width: 1094px;
+  width: 100%;
   height: 40px;
   box-sizing: border-box;
   background-color: #f7f6f4;
@@ -1599,9 +1607,12 @@ p.auctions-main__bid-amount {
   margin-top: 34px;
   margin-bottom: 67px; }
 
-.select--res::after {
-  left: 57px;
-  top: 14px; }
+.select--res {
+  display: flex;
+  align-items: center;
+  cursor: pointer; }
+  .select--res::after {
+    left: 57px; }
 
 .select--res select {
   margin-left: 0;

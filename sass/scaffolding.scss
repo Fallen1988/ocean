@@ -12,8 +12,16 @@ body {
   margin-left: auto;
 }
 
-.container--flex {
+.container-flex--header {
   display: flex;
+
+  background-color: #edeae6;
+}
+
+.container-flex--footer {
+  display: flex;
+
+  background-color: #283b4d;
 }
 
 img {
