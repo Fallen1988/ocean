@@ -24,9 +24,9 @@ gulp.task("sass", function () {
   gulp.src("sass/style.scss")      //звідки ми все починаємо
     .pipe(sass())
     .pipe(gulp.dest("css"))     // в яку папку зберегти результат
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    // .pipe(minify())
+    // .pipe(rename("style.min.css"))
+    // .pipe(gulp.dest("build/css"))
     .pipe(browserSync.reload({
       stream: true
     }));
